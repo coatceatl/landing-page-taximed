@@ -2,5 +2,11 @@ body,
 html {
   margin-left: 0;
   margin-right: 0;
-  background-color: green;
 }
+.container {
+  height: 1080px;
+  background-image: url(../img/bg/header-bg.png);
+  background-repeat: no-repeat;
+}
+/*@import '_navigation.less';*/
+/*@import '_header.less';*/
