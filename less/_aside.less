@@ -1,11 +1,69 @@
 .aside-content {
   color: @base-color;
+
+  img {
+    padding-bottom: 30px;
+    padding-top: 5px;
+  }
+}
+.aside-content-footer {
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+}
+.shape {
+  background-color: rgb(176,189,193);
+  margin-bottom: 40px;
+}
+a.button {
+  padding: 20px;
+}
+.button {
+  background-color: @btn-link-color;
+  color: @base-color;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 1.5;
+  height: 62px;
+  width: 219px;
+  text-decoration: none;
+  text-transform: uppercase;
+  z-index: 46;
+
+  img {
+    padding-bottom: 0;
+    padding-right: 10px;
+    vertical-align: bottom;
+    margin-top: 15px;
+  }
+}
+.aside-block p {
+  margin: 0;
+  padding-bottom: 10px;
+  font-size: 0.875rem;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  line-height: 1.6;
+  z-index: 39;
+}
+p.aside-text {
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
-.aside-banner {
-  height: 318px;
-  width: 368px;
-  background-color:@bg-banner;
+.aside-block p.aside-numbers {
+  white-space: pre;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.aside-block p.aside-text-space {
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  font-weight: 400;
 }
 .col-2 {
   width: 20%;
@@ -13,4 +71,31 @@
 
 .col-10 {
   width: 80%;
+}
+
+.aside-banner {
+  height: 318px;
+  width: 368px;
+  background-color:@bg-banner;
+  position: absolute;
+  top: 636px;
+}
+.banner-container {
+  color: @base-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.banner-text {
+  font-size: 1.25rem;
+  font-family: 'Open Sans';
+  line-height: 1.2;
+  z-index: 21;
+}
+.heading-2 {
+  font-family: 'Open Sans';
+  font-weight: 700;
 }
