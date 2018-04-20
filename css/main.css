@@ -1,8 +1,9 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:300,600,700&amp;subset=cyrillic';
 /* Open Sans, 300,600,700 */
 @font-face {
-  font-family: Gilroy;
-  src: url(../fonts/gilroy_extrabold.ttf);
+  font-family: 'Gilroy-ExtraBold';
+  src: url(../fonts/gilroy_extrabold.otf);
+  font-weight: 900;
 }
 /*Gilroy ExtraBold*/
 body,
@@ -20,7 +21,9 @@ html {
   display: flex;
 }
 .container {
-  width: 1200px;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 header {
   width: 80%;
@@ -35,7 +38,7 @@ aside {
 .nav-menu {
   margin: 0;
   padding: 0;
-  padding-top: 30px;
+  padding-top: 40px;
   list-style-type: none;
   display: flex;
   flex-direction: row;
@@ -43,7 +46,7 @@ aside {
   text-transform: uppercase;
 }
 .nav-menu .nav-menu-list a {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-family: Open Sans;
   font-weight: 700;
   color: #ffffff;
@@ -62,9 +65,20 @@ aside {
   flex-direction: column;
   color: #ffffff;
 }
+h1 {
+  font-size: 3.75rem;
+  font-family: 'Gilroy-ExtraBold';
+  line-height: 1.283;
+  height: 440px;
+  display: flex;
+  align-items: center;
+}
 .header-lists li {
+  font-family: 'Open Sans';
+  font-weight: 600;
   list-style-type: none;
 }
 .header-lists li:before {
   content: url(../img/icons/ellipse.png);
+  padding-right: 15px;
 }
