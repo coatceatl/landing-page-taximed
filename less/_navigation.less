@@ -1,10 +1,11 @@
 .nav-menu {
   margin: 0;
   padding: 0;
+  padding-top: 30px;
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   text-transform: uppercase;
 
   .nav-menu-list {
@@ -15,6 +16,7 @@
       font-weight: 700;
       color: @base-color;
       text-decoration: none;
+      transition: 0.2s ease-out;
 
       &:hover, &:focus, &:active {
         border-bottom: 1px solid @btn-link-color;

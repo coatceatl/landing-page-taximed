@@ -11,7 +11,7 @@ html {
   margin-right: 0;
   font-size: 16px;
 }
-.container {
+.container-fluid {
   height: 1080px;
   width: 100%;
   background-image: url(../img/bg/header-bg.png);
@@ -19,8 +19,14 @@ html {
   background-size: cover;
   display: flex;
 }
+.container {
+  width: 1200px;
+}
 header {
   width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 aside {
   width: 20%;
@@ -29,10 +35,11 @@ aside {
 .nav-menu {
   margin: 0;
   padding: 0;
+  padding-top: 30px;
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   text-transform: uppercase;
 }
 .nav-menu .nav-menu-list a {
@@ -41,6 +48,7 @@ aside {
   font-weight: 700;
   color: #ffffff;
   text-decoration: none;
+  transition: 0.2s ease-out;
 }
 .nav-menu .nav-menu-list a:hover,
 .nav-menu .nav-menu-list a:focus,
@@ -49,4 +57,14 @@ aside {
   text-decoration: none;
   color: #ed3f10;
 }
-/*@import '_header.less';*/
+.header-content {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+.header-lists li {
+  list-style-type: none;
+}
+.header-lists li:before {
+  content: url(../img/icons/ellipse.png);
+}
