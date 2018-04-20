@@ -5,8 +5,18 @@ html {
 }
 .container {
   height: 1080px;
+  width: 100%;
   background-image: url(../img/bg/header-bg.png);
   background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+header {
+  width: 80%;
+}
+aside {
+  width: 20%;
+  background-color: #0d69b0;
 }
 /*@import '_navigation.less';*/
 /*@import '_header.less';*/
