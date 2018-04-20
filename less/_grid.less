@@ -5,11 +5,11 @@ body, html {
 }
 
 .container-fluid {
-  height: 1080px;
+  height: 954px;
   width: 100%;
   background-image: url(../img/bg/header-bg.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   display: flex;
 }
 
@@ -28,5 +28,13 @@ header {
 
 aside {
   width: 20%;
-  background-color: rgb(13, 105, 176);
+  height: 914px;
+  background-color: @bg-aside;
+  opacity: 0.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
 }
