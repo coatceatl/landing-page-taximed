@@ -1,0 +1,27 @@
+.nav-menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-transform: uppercase;
+
+  .nav-menu-list {
+
+    a {
+      font-size: 1rem;
+      font-family: Open Sans;
+      font-weight: 700;
+      color: @base-color;
+      text-decoration: none;
+
+      &:hover, &:focus, &:active {
+        border-bottom: 1px solid @btn-link-color;
+        text-decoration: none;
+        color: @btn-link-color;
+      }
+    }
+  }
+}
+

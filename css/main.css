@@ -1,7 +1,15 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,600,700&amp;subset=cyrillic';
+/* Open Sans, 300,600,700 */
+@font-face {
+  font-family: Gilroy;
+  src: url(../fonts/gilroy_extrabold.ttf);
+}
+/*Gilroy ExtraBold*/
 body,
 html {
   margin-left: 0;
   margin-right: 0;
+  font-size: 16px;
 }
 .container {
   height: 1080px;
@@ -18,5 +26,27 @@ aside {
   width: 20%;
   background-color: #0d69b0;
 }
-/*@import '_navigation.less';*/
+.nav-menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-transform: uppercase;
+}
+.nav-menu .nav-menu-list a {
+  font-size: 1rem;
+  font-family: Open Sans;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+}
+.nav-menu .nav-menu-list a:hover,
+.nav-menu .nav-menu-list a:focus,
+.nav-menu .nav-menu-list a:active {
+  border-bottom: 1px solid #ed3f10;
+  text-decoration: none;
+  color: #ed3f10;
+}
 /*@import '_header.less';*/
