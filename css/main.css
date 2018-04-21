@@ -139,6 +139,17 @@ aside {
 .hamburger:before {
   top: calc(97%);
 }
+.hamburger.active span {
+  opacity: 0;
+}
+.hamburger.active:after {
+  transform: rotate(-45deg);
+  top: 9px;
+}
+.hamburger.active:before {
+  transform: rotate(45deg);
+  top: 9px;
+}
 .header-content {
   display: flex;
   flex-direction: column;
