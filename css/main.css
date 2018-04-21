@@ -46,8 +46,7 @@ header {
 aside {
   width: 20vw;
   height: 100vh;
-  background-color: #171a1b;
-  /*opacity: 0.6;*/
+  background-color: rgba(23, 26, 27, 0.6);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -271,7 +270,7 @@ p.aside-text {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: start;
+  justify-content: space-evenly;
   text-align: center;
   padding: 15px;
 }
@@ -281,10 +280,13 @@ p.aside-text {
   line-height: 1.2;
   z-index: 21;
 }
-.heading-2 {
+.banner-heading {
+  font-size: 1.5rem;
   font-family: 'Open Sans';
   font-weight: 700;
 }
-a.btn-number img {
-  margin-top: 15px;
+#phone {
+  height: 56px;
+  width: 295px;
+  border-radius: 401px;
 }
