@@ -5,3 +5,13 @@ $(document).ready(function() {
     $('#navigation').toggleClass('nav-menu--menu-mobile');
   });
 });
+
+
+$(document).ready(function() {
+  $('#form').submit(function(e) {
+    e.preventDefault();
+    alert('send');
+  })
+//  $("#phone").mask("(999) 999-9999");
+});
+
