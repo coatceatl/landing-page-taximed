@@ -10,8 +10,19 @@ $(document).ready(function() {
 $(document).ready(function() {
   $('#form').submit(function(e) {
     e.preventDefault();
-    alert('send');
-  })
-//  $("#phone").mask("(999) 999-9999");
+    alert( $(this).serialize() );
+    alert('Ваша заявка принята!');
+  });
 });
+
+$.mask = {
+  definitions: { '9': '[0-9]' },
+  autoclear: !0,
+  placeholder: '-'
+}
+
+$(document).ready(function() {
+  $("#phone").mask('+7 (999) 999-9999');
+});
+
 

@@ -263,6 +263,8 @@ p.aside-text {
   height: 34%;
   width: inherit;
   background-color: #0d69b0;
+  display: flex;
+  align-items: center;
 }
 .banner-container {
   color: #ffffff;
@@ -278,7 +280,7 @@ p.aside-text {
   font-size: 1.25rem;
   font-family: 'Open Sans';
   line-height: 1.2;
-  z-index: 21;
+  margin: 0;
 }
 .banner-heading {
   font-size: 1.5rem;
@@ -286,28 +288,37 @@ p.aside-text {
   font-weight: 700;
 }
 .container-phone {
-  width: 295px;
+  width: 90%;
 }
 .container-phone .row {
-  justify-content: center;
   align-items: center;
   background: #969090;
-  border: 1px solid #969090;
+  /*border: 1px solid #969090;*/
   border-radius: 40px;
 }
 .col-sm-5 button {
   background-color: #42a2ec;
-  color: #ffffff;
   border-radius: 40px;
   height: 56px;
   border: 0!important;
   padding-left: 15px;
   padding-right: 15px;
-}
-input[type=text] {
-  color: white;
+  outline: none;
 }
 input {
   background-color: transparent!important;
   border: 0!important;
+  outline: none;
 }
+select {
+  outline: none;
+}
+.country {
+  position: relative;
+}
+.form-control {
+  color: #ffffff;
+  text-align: center;
+}
+/*select.country option[value='Ru'] {
+  background-image: url(../img/icons/flag-russia.png);}*/

@@ -106,8 +106,21 @@
           <div class='container-phone'>
             <form id='form' class='form-inline' action='' method='post'>
               <div class='row'>
-                <div class='col-sm-7'>
-                  <input class='form-control' type='tel' id='phone' name='phone' placeholder='+7 (___) ___-__-__'>
+                <div class='col-sm-1'>
+                  <select class='country'>
+                    <option value='Ru'>Ru</option>
+                  </select>
+                </div>
+                <div class='col-sm-6'>
+                  <input
+                  class='form-control'
+                  type='tel'
+                  id='phone'
+                  name='phone'
+                  placeholder='+7 (900) 999-99-99'
+                  required='required'
+                  required autocomplete='tel'
+                  >
                 </div>
                 <div class='col-sm-5'>
                   <button id='submit' class='form-control' type='submit'>Жду звонка</button>
@@ -122,6 +135,7 @@
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js'></script>
   <script src='index.js'></script>
 
   </body>
