@@ -23,6 +23,9 @@
         text-decoration: none;
         color: @btn-link-color;
       }
+      @media (max-width: 1260px) {
+        font-size: 1.4rem;
+      }
     }
   }
   @media (max-width: 1260px) {
@@ -30,10 +33,19 @@
   }
 
   &--menu-mobile {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     height: 100%;
     width: 100%;
+    background-color: gray;
+
   }
 }
 .hamburger {
@@ -42,7 +54,7 @@
   @media (max-width: 1260px) {
     display: flex;
     position: relative;
-    margin: 40px;
+    margin-top: 40px;
     width: 26px;
     height: 26px;
     background: none;

@@ -15,39 +15,41 @@ html {
   box-sizing: border-box;
 }
 .container-fluid {
-  height: 954px;
+  height: 100vh;
   width: 100%;
   background-image: url(../img/bg/header-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
 }
-@media screen and (max-width: 1260px) {
-  .container-fluid {
-    height: auto;
-  }
-}
 .container {
   width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  /*  @media screen and (max-width: 1260px) {
-    width: 100%;
-    margin: 2%;
-  }*/
+}
+@media (max-width: 1260px) {
+  .container {
+    width: 75%;
+  }
 }
 .row {
   display: flex;
   flex-direction: row;
 }
 header {
-  width: 80%;
+  width: 80vw;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
+@media (max-width: 1260px) {
+  header {
+    width: 75vw;
+  }
+}
 aside {
-  width: 20%;
+  width: 20vw;
+  height: 100vh;
   background-color: #171a1b;
   /*opacity: 0.6;*/
   display: flex;
@@ -56,17 +58,9 @@ aside {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-@media screen and (max-width: 980px) {
-  .container-fluid {
-    width: 100%;
-    padding: 2% 3%;
-  }
-  .header {
-    width: 60%;
-    padding: 3% 4%;
-  }
-  .aside {
-    width: 30%;
+@media (max-width: 1260px) {
+  aside {
+    width: 25vw;
   }
 }
 .nav-menu {
@@ -95,15 +89,28 @@ aside {
   color: #ed3f10;
 }
 @media (max-width: 1260px) {
+  .nav-menu .nav-menu-list a {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 1260px) {
   .nav-menu {
     display: none;
   }
 }
 .nav-menu--menu-mobile {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   height: 100%;
   width: 100%;
+  background-color: gray;
 }
 .hamburger {
   display: none;
@@ -112,7 +119,7 @@ aside {
   .hamburger {
     display: flex;
     position: relative;
-    margin: 40px;
+    margin-top: 40px;
     width: 26px;
     height: 26px;
     background: none;
@@ -154,14 +161,24 @@ aside {
   display: flex;
   flex-direction: column;
   color: #ffffff;
+  height: 100vh;
+  justify-content: space-evenly;
 }
 h1 {
   font-size: 3.75rem;
   font-family: 'Gilroy-ExtraBold';
   line-height: 1.283;
-  height: 440px;
+  /*height: 440px;*/
   display: flex;
   align-items: center;
+}
+@media (max-width: 1260px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+ul.header-lists {
+  padding-left: 0;
 }
 .header-lists li {
   font-family: 'Open Sans';
@@ -247,7 +264,6 @@ p.aside-text {
   height: 318px;
   width: inherit;
   background-color: #0d69b0;
-  position: absolute;
   top: 636px;
 }
 .banner-container {

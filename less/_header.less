@@ -2,14 +2,24 @@
   display: flex;
   flex-direction: column;
   color: @base-color;
+  height: 100vh;
+  justify-content: space-evenly;
 }
 h1 {
   font-size: 3.75rem;
   font-family: 'Gilroy-ExtraBold';
   line-height: 1.283;
-  height: 440px;
+  /*height: 440px;*/
   display: flex;
   align-items: center;
+
+  @media (max-width: 1260px) {
+    font-size: 3rem;
+  }
+
+}
+ul.header-lists {
+  padding-left: 0;
 }
 .header-lists li {
   font-family: 'Open Sans';
