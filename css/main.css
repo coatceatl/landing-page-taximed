@@ -99,7 +99,7 @@ aside {
     display: none;
   }
 }
-.nav-menu .nav-menu .menu-mobile {
+.nav-menu--menu-mobile {
   display: block;
   position: fixed;
   height: 100%;
