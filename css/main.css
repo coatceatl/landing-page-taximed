@@ -27,6 +27,12 @@ html {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (max-width: 1260px) {
+  .container {
+    width: 100%;
+    margin: 2%;
+  }
+}
 .row {
   display: flex;
   flex-direction: row;
@@ -47,6 +53,19 @@ aside {
   padding-top: 40px;
   padding-bottom: 40px;
 }
+/*@media screen and (max-width: 980px) {
+  .container-fluid {
+    width: 100%;
+    padding: 2% 3%;
+  }
+  .header {
+    width: 60%;
+    padding: 3% 4%;
+  }
+  .aside {
+    width: 30%;
+  }
+}*/
 .nav-menu {
   margin: 0;
   padding: 0;
