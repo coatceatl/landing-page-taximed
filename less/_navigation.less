@@ -25,18 +25,48 @@
       }
     }
   }
+  @media (max-width: 1260px) {
+    display: none;
+  }
 
-  &--menu-mobile {
-    @media (max-width: 1260px) {
-      display: block;
-      position: fixed;
-      height: 100%;
-      width: 100%;
-    }
+  .nav-menu .menu-mobile {
+    display: block;
+    position: fixed;
+    height: 100%;
+    width: 100%;
   }
 }
-/*.nav-button {
+.hamburger {
   display: none;
-}*/
 
+  @media (max-width: 1260px) {
+    display: flex;
+    position: relative;
+    margin: 40px;
+    width: 26px;
+    height: 26px;
+    background: none;
+    border: none;
+    padding: 0;
+  }
 
+  span, &:before, &:after {
+    display: block;
+    height: 3px;
+    background-color: @base-color;
+    width: 100%;
+    margin: auto;
+  }
+
+  &:before, &:after {
+    position: absolute;
+    top: 0;
+    content: '';
+    transform-origin: 50% 50%;
+  }
+
+  &:before {
+    top: calc(100% - 3px);
+  }
+
+}
