@@ -304,11 +304,23 @@ p.aside-text {
   padding-left: 15px;
   padding-right: 15px;
   outline: none;
+  width: max-content;
+}
+.col-sm-6 {
+  width: -webkit-fill-available;
 }
 input {
   background-color: transparent!important;
   border: 0!important;
   outline: none;
+}
+input::-webkit-input-placeholder {
+  color: #ffffff;
+  font-size: 1rem;
+  width: max-content;
+}
+input::-moz-placeholder {
+  color: #ffffff;
 }
 select {
   outline: none;

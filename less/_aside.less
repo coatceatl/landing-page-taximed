@@ -124,13 +124,24 @@ p.aside-text {
     padding-left: 15px;
     padding-right: 15px;
     outline: none;
+    width: max-content;
   }
+}
+.col-sm-6 {
+  width: -webkit-fill-available;
 }
 input {
   background-color: transparent!important;
   border: 0!important;
   outline: none;
 }
+input::-webkit-input-placeholder {
+  color: @base-color;
+  font-size: 1rem;
+  width: max-content;
+}
+input::-moz-placeholder { color: @base-color; }
+
 select {
   outline: none;
 }
