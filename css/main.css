@@ -22,6 +22,7 @@ html {
   background-size: cover;
   background-position: center;
   display: flex;
+  padding: 0;
 }
 .container {
   width: 75%;
@@ -51,12 +52,12 @@ aside {
   flex-direction: column;
   align-items: center;
 }
-@media (max-width: 1260px) {
+@media (max-width: 1400px) {
   aside {
     width: 25vw;
   }
 }
-@media (max-width: 890px) {
+@media (max-width: 1024px) {
   aside {
     width: 30vw;
   }
@@ -70,6 +71,7 @@ aside {
   flex-direction: row;
   justify-content: space-between;
   text-transform: uppercase;
+  width: 100%;
 }
 .nav-menu .nav-menu-list a {
   font-size: 0.9rem;
@@ -86,12 +88,12 @@ aside {
   text-decoration: none;
   color: #ed3f10;
 }
-@media (max-width: 1260px) {
+@media (max-width: 1366px) {
   .nav-menu .nav-menu-list a {
     font-size: 1.4rem;
   }
 }
-@media (max-width: 1260px) {
+@media (max-width: 1366px) {
   .nav-menu {
     display: none;
   }
@@ -109,11 +111,13 @@ aside {
   height: 100%;
   width: 100%;
   background-color: gray;
+  z-index: 100;
 }
 .hamburger {
   display: none;
+  z-index: 100;
 }
-@media (max-width: 1260px) {
+@media (max-width: 1366px) {
   .hamburger {
     display: flex;
     position: relative;
@@ -268,13 +272,13 @@ p.aside-text {
 }
 .banner-container {
   color: #ffffff;
-  height: 320px;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   text-align: center;
-  padding: 15px;
 }
 .banner-text {
   font-size: 1.25rem;
@@ -282,21 +286,37 @@ p.aside-text {
   line-height: 1.2;
   margin: 0;
 }
+@media (max-width: 1024px) {
+  .banner-text {
+    font-size: 1rem;
+  }
+}
 .banner-heading {
   font-size: 1.5rem;
   font-family: 'Open Sans';
   font-weight: 700;
 }
-.container-phone {
-  width: 90%;
+@media (max-width: 1024px) {
+  .banner-heading {
+    font-size: 1.2rem;
+  }
 }
 .container-phone .row {
   align-items: center;
+  justify-content: center;
   background: #969090;
   /*border: 1px solid #969090;*/
   border-radius: 40px;
+  max-width: 100%;
+  margin: 0;
 }
-.col-sm-5 button {
+.container-phone .row .col-2 {
+  padding: 0;
+}
+.col-5 {
+  padding: 0;
+}
+.col-5 button {
   background-color: #42a2ec;
   border-radius: 40px;
   height: 56px;
@@ -306,20 +326,21 @@ p.aside-text {
   outline: none;
   width: max-content;
 }
-.col-sm-6 {
-  width: -webkit-fill-available;
-}
 input {
   background-color: transparent!important;
   border: 0!important;
   outline: none;
+  color: #ffffff;
 }
-input::-webkit-input-placeholder {
+input[type='tel'] {
+  padding: 0;
+}
+input[type='tel']::-webkit-input-placeholder {
   color: #ffffff;
   font-size: 1rem;
   width: max-content;
 }
-input::-moz-placeholder {
+input[type='tel']::-moz-placeholder {
   color: #ffffff;
 }
 select {
@@ -327,10 +348,15 @@ select {
 }
 .country {
   position: relative;
+  border: 0;
 }
 .form-control {
   color: #ffffff;
   text-align: center;
 }
-/*select.country option[value='Ru'] {
-  background-image: url(../img/icons/flag-russia.png);}*/
+.form-inline .form-control {
+  width: inherit;
+}
+select.country option[value='Ru'] {
+  padding: 0;
+}
