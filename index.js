@@ -10,7 +10,6 @@ $(document).ready(function() {
 $(document).ready(function() {
   $('#form').submit(function(e) {
     e.preventDefault();
-    alert( $(this).serialize() );
     alert('Ваша заявка принята!');
   });
 });
