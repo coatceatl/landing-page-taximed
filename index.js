@@ -7,11 +7,9 @@ $(document).ready(function() {
 });
 
 
-$(document).ready(function() {
-  $('#form').submit(function(e) {
-    e.preventDefault();
-    alert('Ваша заявка принята!');
-  });
+$('#form').submit(function(e) {
+  e.preventDefault();
+  alert('Ваша заявка принята!');
 });
 
 $.mask = {
@@ -20,7 +18,7 @@ $.mask = {
   placeholder: '-'
 }
 
-$(document).ready(function() {
+$(function($) {
   $("#phone").mask('+7 (999) 999-9999');
 });
 
