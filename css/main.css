@@ -66,6 +66,9 @@ aside {
   padding-top: 90px;
   padding-bottom: 90px;
 }
+.col-6 {
+  display: flex;
+}
 .nav-menu {
   margin: 0;
   padding: 0;
