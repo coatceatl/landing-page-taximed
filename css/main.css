@@ -420,3 +420,23 @@ select.country option[value='Ru'] {
 .card-price-lists {
   list-style-type: none;
 }
+.card-relocation {
+  border: 1px solid #e1e7eb;
+  background-color: #ffffff;
+  width: 373px;
+  height: 364px;
+}
+.card-relocation-header {
+  font-size: 1.1;
+  font-family: 'Open Sans';
+  color: #000000;
+  line-height: 1.4;
+  font-weight: 600;
+}
+.card-relocation-text {
+  font-size: 1.1;
+  font-family: 'Open Sans';
+  color: #000000;
+  line-height: 1.4;
+  font-weight: 300;
+}
