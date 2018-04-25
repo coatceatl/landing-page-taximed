@@ -32,6 +32,7 @@ html {
 .row {
   display: flex;
   flex-direction: row;
+  margin: 0;
 }
 header {
   width: 80vw;
@@ -70,12 +71,14 @@ aside {
   padding-top: 100px;
   padding-bottom: 90px;
 }
-.col-6 {
+.col-6,
+.col-4 {
   display: flex;
+  padding: 0;
 }
 .container-relocation {
   max-width: 1520px;
-  height: 100vh;
+  height: 1197px;
   background-image: url(../img/bg/bg-relocation.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -397,9 +400,19 @@ select {
 select.country option[value='Ru'] {
   padding: 0;
 }
+.card-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 654px;
+  width: 100vw;
+  border: 1px solid #e1e7eb;
+}
 .card-price-icon {
   margin-bottom: 20px;
   text-align: center;
+  height: 215px;
 }
 .card-price-header {
   font-size: 1.25rem;

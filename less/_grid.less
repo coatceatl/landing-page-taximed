@@ -27,6 +27,7 @@ body, html {
 .row {
   display: flex;
   flex-direction: row;
+  margin: 0;
 }
 
 header {
@@ -65,13 +66,15 @@ aside {
   padding-bottom: 90px;
 }
 
-.col-6 {
+.col-6,
+.col-4 {
   display: flex;
+  padding: 0;
 }
 
 .container-relocation {
   max-width: 1520px;
-  height: 100vh;
+  height: 1197px;
   background-image: url(../img/bg/bg-relocation.png);
   background-repeat: no-repeat;
   background-size: cover;
