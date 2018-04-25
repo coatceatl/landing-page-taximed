@@ -6,6 +6,8 @@
   height: 654px;
   width: 100vw;
   border: 1px solid @card-border-color;
+  background-color: @base-color;
+  z-index: 123;
 }
 
 .card-price-icon {
@@ -32,9 +34,15 @@
   font-family: 'Open Sans';
   font-weight: 300;
   line-height: 1.2;
+  text-align: left;
 }
 .card-price-lists {
   list-style-type: none;
+}
+
+.card-price-lists li:before {
+  content: url(../img/icons/ellipse.png);
+  padding-right: 15px;
 }
 
 .price {
