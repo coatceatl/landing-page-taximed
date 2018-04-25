@@ -3,7 +3,7 @@
 @font-face {
   font-family: 'Gilroy-ExtraBold';
   src: url(../fonts/gilroy_extrabold.otf);
-  font-weight: 900;
+  font-weight: 600,900;
 }
 /*Gilroy ExtraBold*/
 body,
@@ -413,6 +413,8 @@ select.country option[value='Ru'] {
   margin-bottom: 20px;
   text-align: center;
   height: 215px;
+  display: flex;
+  align-items: center;
 }
 .card-price-header {
   font-size: 1.25rem;
@@ -432,6 +434,37 @@ select.country option[value='Ru'] {
 }
 .card-price-lists {
   list-style-type: none;
+}
+.price {
+  font-size: 1rem;
+  font-family: 'Gilroy';
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.2;
+  text-transform: uppercase;
+  background-color: #ed3f10;
+  border-radius: 4px;
+  border: none;
+  width: 219px;
+  height: 64px;
+  padding: 0px;
+  margin: 6px;
+  text-align: center;
+}
+.phone {
+  font-size: 1rem;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  color: #8a8e94;
+  line-height: 1.2;
+  background-color: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #dde1e4;
+  width: 219px;
+  height: 64px;
+  padding: 0px;
+  margin: 6px;
+  text-align: center;
 }
 .card-relocation {
   border: 1px solid #e1e7eb;
