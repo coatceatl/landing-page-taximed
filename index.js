@@ -20,12 +20,5 @@ $('#form').submit(function(e) {
   e.preventDefault();
   alert('Ваша заявка принята!');
 
-  $.ajax ({
-    type: 'POST',
-    url: 'mail.json',
-    data: $(this).serialize()
-  })
-});
-
 
 
